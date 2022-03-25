@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'anyiicon';  /* project id 3277073 */
+    src: url('?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_3277073_5wbatxhm7cu.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_3277073_5wbatxhm7cu.woff') format('woff'),
+    url('//at.alicdn.com/t/font_3277073_5wbatxhm7cu.ttf') format('truetype'),
+    url('#iconfont') format('svg');
+}
+
+.anyi-icon {
+    font-family: "anyiicon", serif !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-code:before {
+    content: "\e8ea";
+}
+
+.icon-link:before {
+    content: "\e643";
+}
+
+.icon-about-me:before {
+    content: "\e662";
+}
+
+.icon-notice:before {
+    content: "\e7d8";
+}
+
+.icon-tags:before {
+    content: "\e63e";
+}
