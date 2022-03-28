@@ -15,7 +15,6 @@
         flex-direction: row;
         align-items: flex-start;
         margin-top: 30px;
-        height: 2000px;
         width: 1440px;
         //padding: 30px 0 30px 30px;
         background-color: #FFFFFF;
@@ -25,7 +24,7 @@
             display: flex;
             flex-direction: column;
             flex-shrink: 0;
-            width: 170px;
+            width: 165px;
             background: $primary-color;
             border-radius: $border-radius-md;
             color: #FFFFFF;
@@ -194,6 +193,130 @@
                         /* autoprefixer: ignore next */
                         -webkit-box-orient: vertical;
                     }
+                }
+            }
+            .crumbs{
+                a{
+                    font-size: 14px;
+                    margin-right: 16px;
+                    position: relative;
+                    &::after{
+                        content: '/';
+                        color: $font-color-gray;
+                        width: 16px;
+                        text-align: center;
+                        pointer-events: none;
+                        cursor: default;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+                span{
+                    font-size: 14px;
+                    color: $font-color-gray;
+                }
+            }
+            .post-wrap{
+                margin-top: 38px;
+                .post-header{
+                    .post-title{
+                        font-size: 32px;
+                        line-height: 1.2;
+                        color: $font-color;
+                    }
+                    .post-meta{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 30px 0;
+                        .left{
+                            display: flex;
+                            align-items: center;
+                            .post-category{
+                                color: $font-color-gray;
+                                font-size: 14px;
+                                margin-right: 20px;
+                                &:hover{
+                                    color: $primary-color;
+                                }
+                            }
+                            span{
+                                margin-right: 20px;
+                            }
+                        }
+                        .right{
+                            display: flex;
+                            align-items: center;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: $font-color-gray;
+                        }
+                        .tag{
+                            margin-left: 5px;
+                            display: inline-flex;
+                            align-items: center;
+                            height: 22px;
+                            color: #C6A549;
+                            font-size: 12px;
+                            padding: 0 6px;
+                            background-color: rgba(255, 213, 93, 0.18);
+                            border-radius: 22px;
+                        }
+                    }
+                }
+                .post-content {
+                    font-size: 17px;
+                    line-height: 2;
+                    word-break: break-all;
+                    text-align: justify;
+                    padding-bottom: 26px;
+                    border-bottom: 1px #EAEFFE solid;
+                }
+
+                .post-content p {
+                    margin-top: 22px;
+                    margin-bottom: 22px;
+                }
+
+                .post-content h3 {
+                    display: inline-block;
+                    font-size: 22px;
+                    margin-top: 22px;
+                    font-weight: bolder;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .post-content h4 {
+                    margin-top: 22px;
+                    margin-bottom: 22px;
+                    font-size: 20px;
+                }
+
+                .post-content h3::after {
+                    position: absolute;
+                    bottom: 8px;
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 10px;
+                    background-color: #FFD55D;
+                    z-index: -1;
+                }
+
+                .post-content figure.wp-block-image {
+                    margin: 22px auto;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    border: 1px #ddd solid;
+                    width: fit-content;
+                    max-width: 100%;
+                }
+
+                .wp-block-image img {
+                    max-width: 100%;
                 }
             }
         }

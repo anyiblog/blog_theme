@@ -6,6 +6,8 @@ html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, 
 }
 
 body, input, button, select, textarea {
+    color: $font-color;
+    font-size: 14px;
     font-family: "Microsoft Yahei", "Yuanti SC", "Source Han Sans CN", serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
