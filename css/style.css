@@ -80,13 +80,13 @@ html {
   flex-shrink: 0;
   flex-direction: row;
   align-items: flex-start;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 1440px;
   background-color: #FFFFFF;
   border-radius: 48px;
 }
 .home .content-box .header {
-  margin: 30px 0 30px 30px;
+  margin: 40px 0 40px 40px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -172,7 +172,7 @@ html {
   flex-grow: 1;
   box-sizing: border-box;
   height: 100%;
-  padding: 40px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   min-width: 380px;
@@ -379,13 +379,126 @@ html {
 .home .content-box .aside-item {
   padding: 40px;
   margin-bottom: 30px;
-  height: 500px;
   background: #FFFFFF;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.06);
   border-radius: 40px;
 }
-.home .content-box .aside-item-content {
-  background-color: aqua;
+.home .content-box .aside-item-content .search-form {
+  height: 50px;
+  display: flex;
+  align-items: stretch;
+  border-radius: 50px;
+  background-color: #F6F8FF;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+.home .content-box .aside-item-content .search-form i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 10px;
+  color: #9DA0B3;
+  font-size: 24px;
+}
+.home .content-box .aside-item-content .search-form .search-input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+}
+.home .content-box .aside-item-content .search-form .search-input::placeholder {
+  color: #9DA0B3;
+}
+.home .content-box .aside-item-content .block-wrap .block-title {
+  font-size: 22px;
+  color: #3E4252;
+  margin-bottom: 20px;
+}
+.home .content-box .aside-item-content .block-wrap .sidebar-post-list-not-desc .sidebar-post-item {
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+}
+.home .content-box .aside-item-content .block-wrap .sidebar-post-list-not-desc .sidebar-post-item-img-box .sidebar-post-item-img {
+  display: block;
+  width: 128px;
+  height: 104px;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+.home .content-box .aside-item-content .block-wrap .sidebar-post-list-not-desc .sidebar-post-item-title {
+  font-size: 14px;
+}
+.home .content-box .aside-item-content .block-wrap .directory {
+  background-color: #F6F8FF;
+  border-radius: 16px;
+  font-size: 16px;
+  padding: 22px 0 22px 38px;
+}
+.home .content-box .aside-item-content .block-wrap .directory li {
+  list-style: disc;
+  color: #9DA0B3;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.home .content-box .aside-item-content .block-wrap .post-item {
+  margin-top: 30px;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-img-hover {
+  display: block;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-img-hover .post-item-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 16px;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-title {
+  display: block;
+  margin-top: 12px;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-title_text {
+  font-size: 18px;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-tags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-tags .tag-wrap {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-tags .tag-wrap a {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  color: #C6A549;
+  font-size: 12px;
+  padding: 0 6px;
+  margin-left: 2px;
+  background-color: rgba(255, 213, 93, 0.18);
+  border-radius: 22px;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-tags .post-item-meta {
+  font-size: 14px;
+  color: #9DA0B3;
+  flex-shrink: 0;
+  margin-left: 5px;
+}
+.home .content-box .aside-item-content .block-wrap .post-item-summary {
+  font-size: 14px;
+  color: #9DA0B3;
+  margin-top: 5px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
 }
 .home .footer {
   display: flex;

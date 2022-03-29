@@ -14,13 +14,13 @@
         flex-shrink: 0;
         flex-direction: row;
         align-items: flex-start;
-        margin-top: 30px;
+        margin-top: 50px;
         width: 1440px;
         //padding: 30px 0 30px 30px;
         background-color: #FFFFFF;
         border-radius: $border-radius-xl;
         .header{
-            margin: 30px 0 30px 30px;
+            margin: 40px 0 40px 40px;
             display: flex;
             flex-direction: column;
             flex-shrink: 0;
@@ -111,7 +111,7 @@
             box-sizing: border-box;
             height: 100%;
             //background-color: blue;
-            padding: 40px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             min-width: 380px;
@@ -328,12 +328,137 @@
             &-item{
                 padding: 40px;
                 margin-bottom: 30px;
-                height: 500px;
                 background: #FFFFFF;
                 box-shadow: $component-shadow;
                 border-radius: $border-radius-lg;
                 &-content{
-                    background-color: aqua;
+                    .search-form{
+                        height: 50px;
+                        display: flex;
+                        align-items: stretch;
+                        border-radius: 50px;
+                        background-color: #F6F8FF;
+                        margin-top: 26px;
+                        margin-bottom: 26px;
+                        i{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin:0 5px 0 10px;
+                            color: $font-color-gray;
+                            font-size: 24px;
+                        }
+                        .search-input{
+                            flex: 1;
+                            border: none;
+                            background-color: transparent;
+                            &::placeholder {
+                                color: $font-color-gray;
+                            }
+                        }
+                    }
+                    .block-wrap{
+                        .block-title{
+                            font-size: 22px;
+                            color: $font-color;
+                            margin-bottom: 20px;
+                            .block-title_a{}
+                        }
+                        // 侧边栏文章（不带文章简介）
+                        .sidebar-post-list-not-desc{
+                            .sidebar-post-item{
+                                display: flex;
+                                align-items: center;
+                                margin-top: 26px;
+                                &-img-box{
+                                    .sidebar-post-item-img{
+                                        display: block;
+                                        width: 128px;
+                                        height: 104px;
+                                        border-radius: 16px;
+                                        margin-right: 16px;
+                                    }
+                                }
+                                &-title{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        // 侧边栏文章目录
+                        .directory{
+                            background-color: #F6F8FF;
+                            border-radius: 16px;
+                            font-size: 16px;
+                            padding: 22px 0 22px 38px;
+                            li{
+                                list-style: disc;
+                                color: #9DA0B3;
+                                margin-bottom: 8px;
+                                cursor: pointer;
+                                transition: color .25s ease;
+                            }
+                        }
+                        .post-item{
+                            margin-top: 30px;
+                            &-img-hover{
+                                display: block;
+                                .post-item-img{
+                                    width: 100%;
+                                    height: 150px;
+                                    border-radius: $border-radius-xs;
+                                }
+                            }
+                            &-title{
+                                display: block;
+                                margin-top: 12px;
+                                &_text{
+                                    font-size: 18px;
+                                }
+                            }
+                            &-tags{
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-end;
+                                margin-top: 8px;
+                                .tag-wrap{
+                                    flex-grow: 1;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    a{
+                                        display: inline-flex;
+                                        align-items: center;
+                                        height: 22px;
+                                        color: #C6A549;
+                                        font-size: 12px;
+                                        padding: 0 6px;
+                                        margin-left: 2px;
+                                        background-color: rgba(255, 213, 93, 0.18);
+                                        border-radius: 22px;
+                                    }
+                                }
+                                .post-item-meta{
+                                    font-size: 14px;
+                                    color: $font-color-gray;
+                                    flex-shrink: 0;
+                                    margin-left: 5px;
+                                }
+                            }
+                            &-summary{
+                                font-size: 14px;
+                                color: #9DA0B3;
+                                margin-top: 5px;
+                                text-align: justify;
+
+                                overflow:hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2; //多行在这里修改数字即可
+                                /* autoprefixer: ignore next */
+                                -webkit-box-orient: vertical;
+                            }
+                        }
+                    }
                 }
             }
         }
