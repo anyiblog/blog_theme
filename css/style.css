@@ -177,6 +177,14 @@ html {
   flex-direction: column;
   min-width: 380px;
 }
+.home .content-box .main .slider-container .pic-cover-item {
+  border-radius: 32px;
+  overflow: hidden;
+}
+.home .content-box .main .slider-container .pic-cover-item .pic-cover-item-img {
+  height: 400px;
+  width: 100%;
+}
 .home .content-box .main .banner-slide {
   border-radius: 32px;
 }
@@ -435,10 +443,13 @@ html {
   padding: 22px 0 22px 38px;
 }
 .home .content-box .aside-item-content .block-wrap .directory li {
-  list-style: disc;
   color: #9DA0B3;
+  list-style: disc;
   margin-bottom: 8px;
   cursor: pointer;
+}
+.home .content-box .aside-item-content .block-wrap .directory li a {
+  color: #9DA0B3;
   transition: color 0.25s ease;
 }
 .home .content-box .aside-item-content .block-wrap .post-item {

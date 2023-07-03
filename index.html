@@ -2,52 +2,60 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- 优先使用最新版本IE和谷歌浏览器 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 响应式 -->
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- 默认使用webkit渲染内核 -->
     <meta name="renderer" content="webkit">
+    <!-- 阻止数字在Iphone点击可拨号-->
     <meta name="format-detection" content="telephone=no">
+    <!-- 允许iphone设备全屏模式浏览，隐藏浏览器导航栏 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>安忆博客</title>
-    <meta name="description" content="AnyiBlog，安忆博客">
-    <meta name="keywords" content="AnyiBlog，安忆博客">
+    <!-- 屏蔽百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- SEO关键字 -->
+    <title>安忆博客-永远热爱生活，永远期待明天</title>
+    <meta name="description" content="安忆博客，专注于分享前端技术经验，各类互联网资源和生活杂记的个人博客。">
+    <meta name="keywords" content="安忆博客，安忆，Kepler，IT博客，个人博客，UniApp技术博客，前端博客，AnyiBlog，anyi，Anyi">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" href="js/slider/slider.css">
 </head>
 <body class="home blog">
 <div class="content-box">
     <div class="header">
         <div class="logo-wrap">
-            <a href="/" title="那些免费的砖官网" class="logo-img-wrap">
+            <a href="/" title="安忆博客" class="logo-img-wrap">
                 <img src="./img/logo.jpeg" alt="" class="logo">
                 <h2>Kepler</h2>
             </a>
-            <p class="sub-title">永远年轻，永远热泪盈眶</p>
+            <p class="sub-title">永远热爱生活，永远期待明天</p>
         </div>
         <div class="menu-box">
             <ul class="menu-list">
                 <li class="menu-item current-menu-item">
-                    <a title="编程技术代码"  href="#">
+                    <a title="编程技术代码" href="#">
                         <i class="anyi-icon icon-code"></i>
                         <p class="menu-item-title">代码</p>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a title="生活日常杂记"  href="#">
+                    <a title="生活日常杂记" href="#">
                         <i class="anyi-icon icon-notice"></i>
                         <p class="menu-item-title">杂记</p>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a title="友情链接"  href="#">
+                    <a title="友情链接" href="#">
                         <i class="anyi-icon icon-link"></i>
                         <p class="menu-item-title">友联</p>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a title="个人介绍"  href="#">
+                    <a title="个人介绍" href="#">
                         <i class="anyi-icon icon-about-me"></i>
                         <p class="menu-item-title">关于</p>
                     </a>
@@ -56,137 +64,137 @@
         </div>
     </div>
     <div class="main">
-        <div class="banner-slide">
-            <div class="banner-slide-item">
-                <a href="" class="banner-slide-item">
-                    <img src="./img/banner.jpeg" alt="" class="banner-slide-item-img">
+        <div class="slider-container">
+            <div class="slider">
+                <a class="slider__item pic-cover-item" href="" target="_blank">
+                    <img src="https://img.thosefree.com/wp-content/uploads/2021/06/naive-ui-cover.jpg&720x405.jpg" class="pic-cover-item-img" alt="" draggable="false">
+                    <div class="slider__caption">
+                        <h3 class="pic-cover-item-title">IconPark - 字节跳动出品的开源图标库，数量超多、品质很高</h3>
+                    </div>
                 </a>
+                <a class="slider__item pic-cover-item" href="" target="_blank">
+                    <img src="https://img.thosefree.com/wp-content/uploads/2021/06/naive-ui-cover.jpg&720x405.jpg" class="pic-cover-item-img" alt="" draggable="false">
+                    <div class="slider__caption">
+                        <h3 class="pic-cover-item-title">IconPark - 字节跳动出品的开源图标库，数量超多、品质很高</h3>
+                    </div>
+                </a>
+                <a class="slider__item pic-cover-item" href="" target="_blank">
+                    <img src="https://img.thosefree.com/wp-content/uploads/2021/06/naive-ui-cover.jpg&720x405.jpg" class="pic-cover-item-img" alt="" draggable="false">
+                    <div class="slider__caption">
+                        <h3 class="pic-cover-item-title">IconPark - 字节跳动出品的开源图标库，数量超多、品质很高</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__switch slider__switch--prev" data-ikslider-dir="prev">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="slider__switch slider__switch--next" data-ikslider-dir="next">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/>
+                    </svg>
+                </span>
             </div>
         </div>
         <div class="post-list">
             <div class="post-item">
-                <a class="post-item-img-hover" href="" title="" target="_blank">
-                    <img class="post-item-img" src="./img/post-img.jpeg" alt="">
+                <a class="post-item-img-hover" href="./article-02.html" title="iPad 和 iWatch SE 开箱-安忆博客"
+                   target="_blank">
+                    <img class="post-item-img" src="./img/article02.jpeg" alt="iPad 和 iWatch SE 开箱-安忆博客">
                 </a>
-                <a href="" class="post-item-title" title="" target="_blank">
-                    <h3 class="post-item-title_text">DOTOWN - 免费可商用的像素风格透明素材库，由前任天堂设计师创立</h3>
+                <a href="./article-02.html" class="post-item-title" title="iPad 和 iWatch SE 开箱-安忆博客" target="_blank">
+                    <h3 class="post-item-title_text">iPad 和 iWatch SE 开箱</h3>
                 </a>
                 <div class="post-item-tags">
                     <div class="tag-wrap">
-                        <a href="https://www.thosefree.com/tag/png" rel="tag">png</a>
-                        <a href="https://www.thosefree.com/tag/people-photo" rel="tag">人物图库</a>
-                        <a href="https://www.thosefree.com/tag/abroad-photos" rel="tag">国外图库</a>
-                        <a href="https://www.thosefree.com/tag/icon" rel="tag">图标</a>
-                        <a href="https://www.thosefree.com/tag/stock" rel="tag">素材</a>
-                        <a href="https://www.thosefree.com/tag/food-photo" rel="tag">食材图库</a>
+                        <a href="./article-02.html" rel="tag">生活杂记</a>
                     </div>
-                    <p class="post-item-meta">2022-03-22</p>
+                    <p class="post-item-meta">2022-03-31</p>
                 </div>
-                <p class="post-item-summary">这几年做的可视化项目越来越多，这需要前端的 drag 和 drop 元素能力（下文简称 dnd），dnd
-                    能力极大提高前端交互能力。然而在开发项目期间很少去了解其运行原理，这段时间趁着空余时间算是系统学习下前端 dnd 事件能力吧。</p>
+                <p class="post-item-summary">iPad 老早以前就考虑购买个，都说买来生产力，买后爱奇艺，当我入手后前面几天抱着玩几天，后面完全已经完全吃灰了。当然偶尔也会使</p>
             </div>
             <div class="post-item">
-                <a class="post-item-img-hover" href="" title="" target="_blank">
-                    <img class="post-item-img" src="./img/post-img.jpeg" alt="">
+                <a class="post-item-img-hover" href="article-01.html" title="最近的生活琐事-安忆博客" target="_blank">
+                    <img class="post-item-img" src="./img/article01.jpeg" alt="最近的生活琐事-安忆博客">
                 </a>
-                <a href="" class="post-item-title" title="" target="_blank">
-                    <h3 class="post-item-title_text">DOTOWN - 免费可商用的像素风格透明素材库，由前任天堂设计师创立</h3>
-                </a>
-                <div class="post-item-tags">
-                    <div class="tag-wrap">
-                        <a href="https://www.thosefree.com/tag/png" rel="tag">png</a>
-                        <a href="https://www.thosefree.com/tag/people-photo" rel="tag">人物图库</a>
-                        <a href="https://www.thosefree.com/tag/abroad-photos" rel="tag">国外图库</a>
-                        <a href="https://www.thosefree.com/tag/icon" rel="tag">图标</a>
-                        <a href="https://www.thosefree.com/tag/stock" rel="tag">素材</a>
-                        <a href="https://www.thosefree.com/tag/food-photo" rel="tag">食材图库</a>
-                    </div>
-                    <p class="post-item-meta">2022-03-22</p>
-                </div>
-                <p class="post-item-summary">这几年做的可视化项目越来越多，这需要前端的 drag 和 drop 元素能力（下文简称 dnd），dnd
-                    能力极大提高前端交互能力。然而在开发项目期间很少去了解其运行原理，这段时间趁着空余时间算是系统学习下前端 dnd 事件能力吧。</p>
-            </div>
-            <div class="post-item">
-                <a class="post-item-img-hover" href="" title="" target="_blank">
-                    <img class="post-item-img" src="./img/post-img.jpeg" alt="">
-                </a>
-                <a href="" class="post-item-title" title="" target="_blank">
-                    <h3 class="post-item-title_text">DOTOWN - 免费可商用的像素风格透明素材库，由前任天堂设计师创立</h3>
+                <a href="article-01.html" class="post-item-title" title="最近的生活琐事-安忆博客" target="_blank">
+                    <h3 class="post-item-title_text">最近的生活琐事</h3>
                 </a>
                 <div class="post-item-tags">
                     <div class="tag-wrap">
-                        <a href="https://www.thosefree.com/tag/png" rel="tag">png</a>
-                        <a href="https://www.thosefree.com/tag/people-photo" rel="tag">人物图库</a>
-                        <a href="https://www.thosefree.com/tag/abroad-photos" rel="tag">国外图库</a>
-                        <a href="https://www.thosefree.com/tag/icon" rel="tag">图标</a>
-                        <a href="https://www.thosefree.com/tag/stock" rel="tag">素材</a>
-                        <a href="https://www.thosefree.com/tag/food-photo" rel="tag">食材图库</a>
+                        <a href="article-01.html" rel="tag">生活杂记</a>
                     </div>
-                    <p class="post-item-meta">2022-03-22</p>
+                    <p class="post-item-meta">2022-03-18</p>
                 </div>
-                <p class="post-item-summary">这几年做的可视化项目越来越多，这需要前端的 drag 和 drop 元素能力（下文简称 dnd），dnd
-                    能力极大提高前端交互能力。然而在开发项目期间很少去了解其运行原理，这段时间趁着空余时间算是系统学习下前端 dnd 事件能力吧。</p>
-            </div>
-            <div class="post-item">
-                <a class="post-item-img-hover" href="" title="" target="_blank">
-                    <img class="post-item-img" src="./img/post-img.jpeg" alt="">
-                </a>
-                <a href="" class="post-item-title" title="" target="_blank">
-                    <h3 class="post-item-title_text">DOTOWN - 免费可商用的像素风格透明素材库，由前任天堂设计师创立</h3>
-                </a>
-                <div class="post-item-tags">
-                    <div class="tag-wrap">
-                        <a href="https://www.thosefree.com/tag/png" rel="tag">png</a>
-                        <a href="https://www.thosefree.com/tag/people-photo" rel="tag">人物图库</a>
-                        <a href="https://www.thosefree.com/tag/abroad-photos" rel="tag">国外图库</a>
-                        <a href="https://www.thosefree.com/tag/icon" rel="tag">图标</a>
-                        <a href="https://www.thosefree.com/tag/stock" rel="tag">素材</a>
-                        <a href="https://www.thosefree.com/tag/food-photo" rel="tag">食材图库</a>
-                    </div>
-                    <p class="post-item-meta">2022-03-22</p>
-                </div>
-                <p class="post-item-summary">这几年做的可视化项目越来越多，这需要前端的 drag 和 drop 元素能力（下文简称 dnd），dnd
-                    能力极大提高前端交互能力。然而在开发项目期间很少去了解其运行原理，这段时间趁着空余时间算是系统学习下前端 dnd 事件能力吧。</p>
-            </div>
-            <div class="post-item">
-                <a class="post-item-img-hover" href="" title="" target="_blank">
-                    <img class="post-item-img" src="./img/post-img.jpeg" alt="">
-                </a>
-                <a href="" class="post-item-title" title="" target="_blank">
-                    <h3 class="post-item-title_text">DOTOWN - 免费可商用的像素风格透明素材库，由前任天堂设计师创立</h3>
-                </a>
-                <div class="post-item-tags">
-                    <div class="tag-wrap">
-                        <a href="https://www.thosefree.com/tag/png" rel="tag">png</a>
-                        <a href="https://www.thosefree.com/tag/people-photo" rel="tag">人物图库</a>
-                        <a href="https://www.thosefree.com/tag/abroad-photos" rel="tag">国外图库</a>
-                        <a href="https://www.thosefree.com/tag/icon" rel="tag">图标</a>
-                        <a href="https://www.thosefree.com/tag/stock" rel="tag">素材</a>
-                        <a href="https://www.thosefree.com/tag/food-photo" rel="tag">食材图库</a>
-                    </div>
-                    <p class="post-item-meta">2022-03-22</p>
-                </div>
-                <p class="post-item-summary">这几年做的可视化项目越来越多，这需要前端的 drag 和 drop 元素能力（下文简称 dnd），dnd
-                    能力极大提高前端交互能力。然而在开发项目期间很少去了解其运行原理，这段时间趁着空余时间算是系统学习下前端 dnd 事件能力吧。</p>
+                <p class="post-item-summary">2022年是考验我的一年，我相信过完2022年迎接的将是全新的生活以及全新的我，从1月份到现在，短短4个月有太多的烦心事了......</p>
             </div>
         </div>
     </div>
     <div class="aside">
         <div class="aside-item">
             <div class="aside-item-content">
-                <p>你好</p>
+                <div class="search-form">
+                    <i class="anyi-icon icon-search"></i>
+                    <input value=""
+                           name=""
+                           type="text"
+                           class="search-input"
+                           placeholder="输入关键词，回车搜索">
+                </div>
+                <div class="block-wrap">
+                    <h2 class="block-title">
+                        <a href="#" class="block-title_a">精品好文<i class=""></i></a>
+                    </h2>
+                    <div class="sidebar-post-list-not-desc">
+                        <div class="sidebar-post-item">
+                            <a class="sidebar-post-item-img-box"
+                               href="article-01.html"
+                               title="2022，重新启航-安忆博客">
+                                <img class="sidebar-post-item-img"
+                                     src="./img/article01.jpeg"
+                                     alt="2022，重新启航-安忆博客">
+                            </a>
+                            <a class="sidebar-post-item-title" href="article-01.html"
+                               title="2022，重新启航-安忆博客">
+                                <h3>2022，重新启航</h3>
+                            </a>
+                        </div>
+                        <div class="sidebar-post-item">
+                            <a class="sidebar-post-item-img-box" href="article-02.html"
+                               title="最近的生活琐事-安忆博客">
+                                <img class="sidebar-post-item-img"
+                                     src="./img/article02.jpeg"
+                                     alt="最近的生活琐事-安忆博客">
+                            </a>
+                            <a class="sidebar-post-item-title" href="article-02.html"
+                               title="最近的生活琐事-安忆博客">
+                                <h3>最近的生活琐事</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="aside-item"></div>
-        <div class="aside-item"></div>
     </div>
 </div>
 <div class="footer">
-    Copy Right©2022, All Rights KeplerSnik. anyiblog.com
+    Copy Right©2022, All Rights Kepler. anyiblog.com
     <br class="footer-br">
-    <a href="https://beian.miit.gov.cn/" target="_blank" ref="nofollow">渝ICP备20005754号</a>
-    <a href="https://www.cuiwenyuan.com/shanghai/" target="_blank" ref="nofollow">淮城一只猫</a>
-    <a href="https://coldstone.fun/" target="_blank" ref="nofollow">冷石的博客</a>
+    <a href="https://beian.miit.gov.cn/" target="_blank" ref="nofollow">渝ICP备2021007090号-1</a>
+    <a href="https://www.anyiblog.com" target="_blank" ref="nofollow">Kepler</a>
 </div>
+<script src="https://img.thosefree.com/static/jquery.min.js"></script>
+<script src="./js/slider/slider.js"></script>
+<script type="text/javascript">
+	$(".slider-container").ikSlider({
+		speed: 500,
+		delay: 3000,
+		infinite: true
+	});
+</script>
 </body>
 </html>

@@ -115,6 +115,16 @@
             display: flex;
             flex-direction: column;
             min-width: 380px;
+            .slider-container{
+                .pic-cover-item{
+                    border-radius: $border-radius-md;
+                    overflow: hidden;
+                    .pic-cover-item-img{
+                        height: 400px;
+                        width: 100%;
+                    }
+                }
+            }
             .banner-slide{
                 border-radius: $border-radius-md;
                 &-item{
@@ -391,11 +401,14 @@
                             font-size: 16px;
                             padding: 22px 0 22px 38px;
                             li{
-                                list-style: disc;
                                 color: #9DA0B3;
+                                list-style: disc;
                                 margin-bottom: 8px;
                                 cursor: pointer;
-                                transition: color .25s ease;
+                                a{
+                                    color: #9DA0B3;
+                                    transition: color .25s ease;
+                                }
                             }
                         }
                         .post-item{
