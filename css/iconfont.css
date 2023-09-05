@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'anyiicon';  /* Project id 3277073 */
-    src: url('//at.alicdn.com/t/font_3277073_vxp8ig5a0kc.woff2?t=1648538009216') format('woff2'),
-    url('//at.alicdn.com/t/font_3277073_vxp8ig5a0kc.woff?t=1648538009216') format('woff'),
-    url('//at.alicdn.com/t/font_3277073_vxp8ig5a0kc.ttf?t=1648538009216') format('truetype');
+    src: url('https://at.alicdn.com/t/font_3277073_vxp8ig5a0kc.woff2?t=1648538009216') format('woff2'),
+    url('https://at.alicdn.com/t/font_3277073_vxp8ig5a0kc.woff?t=1648538009216') format('woff'),
+    url('https://at.alicdn.com/t/font_3277073_vxp8ig5a0kc.ttf?t=1648538009216') format('truetype');
 }
 
 .anyi-icon {
